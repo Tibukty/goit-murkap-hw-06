@@ -5,15 +5,24 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio</title>
+
+		<!--fonts-->
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!--normolaize styles-->
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+
+		<!--castom styles-->
+
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
-
 	<body>
 		<!-- heder -->
 
@@ -81,7 +90,7 @@
 					</ul>
 
 					<ul class="list card-set">
-						<li class="card-set-item">
+						<li class="card-set__item">
 							<a class="link card-border" href="">
 								<div class="card-set-blur">
 									<img
@@ -105,7 +114,7 @@
 							</a>
 						</li>
 
-						<li class="card-set-item">
+						<li class="card-set__item">
 							<a class="link card-border" href="">
 								<img
 									class="portfolio-pic img"
@@ -122,7 +131,7 @@
 							</a>
 						</li>
 
-						<li class="card-set-item">
+						<li class="card-set__item">
 							<a class="link card-border" href="">
 								<img
 									class="portfolio-pic img"
@@ -139,7 +148,7 @@
 							</a>
 						</li>
 
-						<li class="card-set-item">
+						<li class="card-set__item">
 							<a class="link card-border" href="">
 								<img
 									class="portfolio-pic img"
@@ -156,7 +165,7 @@
 							</a>
 						</li>
 
-						<li class="card-set-item">
+						<li class="card-set__item">
 							<a class="link card-border" href="">
 								<img
 									class="portfolio-pic img"
@@ -173,7 +182,7 @@
 							</a>
 						</li>
 
-						<li class="card-set-item">
+						<li class="card-set__item">
 							<a class="link card-border" href="">
 								<img
 									class="portfolio-pic img"
@@ -190,7 +199,7 @@
 							</a>
 						</li>
 
-						<li class="card-set-item">
+						<li class="card-set__item">
 							<a class="link card-border" href="">
 								<img
 									class="portfolio-pic img"
@@ -207,7 +216,7 @@
 							</a>
 						</li>
 
-						<li class="card-set-item">
+						<li class="card-set__item">
 							<a class="link card-border" href="">
 								<img
 									class="portfolio-pic img"
@@ -224,7 +233,7 @@
 							</a>
 						</li>
 
-						<li class="card-set-item">
+						<li class="card-set__item">
 							<a class="link card-border" href="">
 								<img
 									class="portfolio-pic img"
@@ -247,18 +256,18 @@
 
 		<!-- footer -->
 
-		<footer class="footer-background">
-			<div class="container section-flex footer-address-flex">
-				<div class="footer-adress-contact">
-					<div class="footer-logo">
-						<a class="logo-web link" href="./index.html">Web<span class="footer-logo-studio">Studio</span></a>
+		<footer class="foter footer--background">
+			<div class="container section-flex footer__baseline">
+				<div class="footer__adress-contact--size">
+					<div class="footer__logo--margin">
+						<a class="logo-web link" href="./index.html">Web<span class="footer__logo-studio">Studio</span></a>
 					</div>
 
 					<ul class="list">
-						<li class="address-item">
+						<li class="footer--address-item">
 							<address>
 								<a
-									class="footer-address link"
+									class="footer__address-link link"
 									href="https://goo.gl/maps/yNYyYPv2zE2rzLxP9"
 									target="_blank"
 									rel="noopener noreferrer"
@@ -266,62 +275,91 @@
 								>
 							</address>
 						</li>
-						<li class="address-item">
-							<a class="footer-contact link" href="mailito:info@example.com">info@example.com</a>
+						<li class="footer--address-item">
+							<a class="footer__contact-link footer__contact-link--hf link" href="mailito:info@example.com"
+								>info@example.com</a
+							>
 						</li>
-						<li class="address-item">
-							<a class="footer-contact link" href="tel:+380991111111">+38 099 111 11 11</a>
+						<li class="footer--address-item">
+							<a class="footer__contact-link footer__contact-link--hf link" href="tel:+380991111111"
+								>+38 099 111 11 11</a
+							>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer-media">
-					<h3 class="footer-h3">присоединяйтесь</h3>
+				<div class="footer-media footer-media--margin">
+					<h3 class="footer-media__h3">присоединяйтесь</h3>
 
-					<ul class="footer-media-list list">
-						<li class="footer-media-item">
+					<ul class="footer-media__list list">
+						<li class="footer-media__item footer-media__item--margin">
 							<a
-								class="footer-media-link link"
+								class="link footer-media__link footer-media__link--hf"
 								href=""
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="instagram"
 							>
-								<svg class="footer-media-icon" width="20" height="20">
+								<svg class="footer-media--icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-instagram-01"></use></svg
 							></a>
 						</li>
-						<li class="footer-media-item">
-							<a class="footer-media-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
-								<svg class="footer-media-icon" width="20" height="20">
+						<li class="footer-media__item footer-media__item--margin">
+							<a
+								class="link footer-media__link footer-media__link--hf"
+								href=""
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="twitter"
+							>
+								<svg class="footer-media--icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-twitter-02"></use></svg
 							></a>
 						</li>
-						<li class="footer-media-item">
-							<a class="footer-media-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
-								<svg class="footer-media-icon" width="20" height="20">
+						<li class="footer-media__item footer-media__item--margin">
+							<a
+								class="link footer-media__link footer-media__link--hf"
+								href=""
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="facebook"
+							>
+								<svg class="footer-media--icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-facebook-03"></use></svg
 							></a>
 						</li>
-						<li class="footer-media-item">
-							<a class="footer-media-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-								<svg class="footer-media-icon" width="20" height="20">
+						<li class="footer-media__item footer-media__item--margin">
+							<a
+								class="link footer-media__link footer-media__link--hf"
+								href=""
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="linkedin"
+							>
+								<svg class="footer-media--icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-linkedin-04"></use></svg
 							></a>
 						</li>
 					</ul>
 				</div>
-				<div class="footer-sub">
-					<h3 class="footer-h3">Подпишитесь на рассылку</h3>
-					<form action="" autocomplete="on">
-						<div class="sub">
-							<label for="" class="footer-email">
-								<input class="sub-input" type="email" name="user-email" placeholder=" " required />
-								<span class="footer-sub-text">E-mail</span></label
+
+				<div class="footer-subscribe">
+					<h3 class="footer-media__h3">Подпишитесь на рассылку</h3>
+					<form autocomplete="on">
+						<div class="footer-subscribe__position">
+							<label class="footer-subscribe__email footer-subscribe__email--position">
+								<input
+									class="footer-subscribe__input footer-subscribe__input--f"
+									type="email"
+									name="user-email"
+									placeholder=" "
+									required
+								/>
+								<span class="footer-subscribe__text">E-mail</span></label
 							>
-							<button type="submit" class="btn btn-sub">
+							<button type="submit" class="btn footer-subscribe__btn footer-subscribe__btn--hf">
 								Подписаться
-								<svg class="svg-btn" width="24" height="24">
+								<svg class="footer-subscribe__svg" width="24" height="24">
 									<use href="./images/icons.svg#icon-samolet-06"></use>
 								</svg>
 							</button>
